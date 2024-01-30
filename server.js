@@ -228,7 +228,7 @@ app.post("/autoCompleteData", async (req, res) => {
   app.post("/vhDetailsList", async (req, res) => {
     const { filterdata, requst } = req.body;
   
-    const url = process.env.C_B_U + requst;
+    const url = process.env.BASE_URL + requst;
     console.log(url);
     async function reqData() {
       await axios
