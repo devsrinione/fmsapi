@@ -512,7 +512,7 @@ app.post("/autoCompleteData", async (req, res) => {
     console.log(url);
     async function reqData() {
       await axios
-        .get(url, {
+        .post(url, {
           headers: {
             Accept: "application/json",
             "Content-Type": "application/json",
