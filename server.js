@@ -473,7 +473,7 @@ app.post("/autoCompleteData", async (req, res) => {
   app.post("/vehiDetails", async (req, res) => {
     const { filterdata, requst } = req.body;
   
-    const url = process.env.R_B_U + requst+`?${filterdata}`
+    const url = process.env.R_B_U + requst +`?${filterdata}`
     console.log(url);
     async function reqData() {
       await axios
